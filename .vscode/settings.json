@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "Finalizated the JWT test succesfuly"
+        "Finalizated the JWT test succesfuly",
+        "update FrontEnd"
     ]
 }

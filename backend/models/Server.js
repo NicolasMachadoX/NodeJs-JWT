@@ -13,7 +13,8 @@ constructor(){
    
     this.middlewares();
     this.path = {
-        userJWT: '/api/userJWT'
+        userJWT: '/api/userJWT',
+        anime: '/api/anime'
     }
 
     this.routes()
@@ -32,7 +33,10 @@ async mongoDbConexion(){
 
 routes(){
 
-        this.app.use(this.path.userJWT, require('../routes/userJWT.routes'));
+    this.app.use(this.path.anime, require('../routes/animeReactTest'));
+
+    
+    this.app.use(this.path.userJWT, require('../routes/userJWT.routes'));
 }
 
 
